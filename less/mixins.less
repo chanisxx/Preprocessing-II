@@ -1,1 +1,22 @@
 // Mixins in here
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.border {
+    border-bottom: 2px dashed @navigation-border;
+}
+
+.button (@font-size; @color; @padding; @background-color; @border-radius) {
+    font-size: @font-size;
+    color: @color;
+    padding: @padding;
+    background-color: @background-color;
+    border-radius: @border-radius;
+}
